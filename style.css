@@ -1,0 +1,147 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 35, 48);
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 220px;
+    transform: translate(-50%, -50%);
+    animation: fillBook 0.5s ease forwards 2s;
+}
+
+#logo path {
+    stroke:#fff;
+    stroke-width:1px;
+}
+/*B*/
+#logo path:nth-child(1) {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+    animation: line-anim 2s ease forwards;
+    /*fill: #4BA6DD;*/
+}
+/*o*/
+#logo path:nth-child(2) {
+    stroke-dasharray: 124;
+    stroke-dashoffset: 124;
+    animation: line-anim 2s ease forwards 0.1s;
+    /*fill: #4BA6DD;*/
+}
+/*o*/
+#logo path:nth-child(3) {
+    stroke-dasharray: 124;
+    stroke-dashoffset: 124;
+    animation: line-anim 2s ease forwards 0.2s;
+    /*fill: #4BA6DD;*/
+}
+/*k*/
+#logo path:nth-child(4) {
+    stroke-dasharray: 182.6;
+    stroke-dashoffset: 182.6;
+    animation: line-anim 2s ease forwards 0.3s;
+    /*fill: #4BA6DD;*/
+}
+/*P*/
+#logo path:nth-child(5) {
+    stroke-dasharray: 151;
+    stroke-dashoffset: 151;
+    animation: line-anim 2s ease forwards 0.4s;
+    fill: #EC008C;
+}
+/*r*/
+#logo path:nth-child(6) {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 90;
+    animation: line-anim 2s ease forwards 0.5s;
+    fill: #EC008C;
+}
+/*i*/
+#logo path:nth-child(7) {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: line-anim 2s ease forwards 0.6s;
+    fill: #EC008C;
+}
+/*n*/
+#logo path:nth-child(8) {
+    stroke-dasharray: 142.8;
+    stroke-dashoffset: 142.8;
+    animation: line-anim 2s ease forwards 0.7s;
+    fill:#EC008C;
+}
+/*t*/
+#logo path:nth-child(9) {
+    stroke-dasharray: 100.7;
+    stroke-dashoffset: 100.7;
+    animation: line-anim 2s ease forwards 0.8s;
+    fill: #EC008C;
+}
+/*i*/
+#logo path:nth-child(10) {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: line-anim 2s ease forwards 0.9s;
+    fill: #EC008C;
+}
+/*n*/
+#logo path:nth-child(11) {
+    stroke-dasharray: 142.8;
+    stroke-dashoffset: 142.8;
+    animation: line-anim 2s ease forwards 1s;
+    fill: #EC008C;
+}
+/*g*/
+#logo path:nth-child(12) {
+    stroke-dasharray: 193;
+    stroke-dashoffset: 193;
+    animation: line-anim 2s ease forwards 1.1s;
+    fill: #EC008C;
+}
+/*U*/
+#logo path:nth-child(13) {
+    stroke-dasharray: 194.5;
+    stroke-dashoffset: 194.5;
+    animation: line-anim 2s ease forwards 1.2s;
+    fill: #FFC222;
+}
+/*K*/
+#logo path:nth-child(14) {
+    stroke-dasharray: 108.6;
+    stroke-dashoffset: 108.6;
+    animation: line-anim 2s ease forwards 1.3s;
+    fill: #FFC222;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+/*Need to find a way to do this correctly*/
+@keyframes fillBook {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #4BA6DD;
+    }
+}
+@keyframes fillPrinting {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #EC008C;
+    }
+}
