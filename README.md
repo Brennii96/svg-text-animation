@@ -1,1 +1,2 @@
-# svg-text-animation
+# SVG Text Animation
+
