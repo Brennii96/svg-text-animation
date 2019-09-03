@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    const preload = document.querySelector('.preload');
+    preload.classList.add('preload-finish');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     function animateSgv (id, delay, delayIncrement){
         const logo = document.getElementById(id);
