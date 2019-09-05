@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* make the button animated so it stands out */
 button {
   animation: alertPulse 2s ease-out;
   animation-iteration-count: infinite;
