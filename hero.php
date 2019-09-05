@@ -4,6 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+  
+/* animate the intro text on scroll */
+  .intro-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+  }
+  
+  .intro-appear {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 
 /* make the button animated so it stands out */
 button {
