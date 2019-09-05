@@ -4,6 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+button {
+  animation: alertPulse 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1;
+  background: #9A2727;
+  animation: alertPulse 2s ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes alertPulse {
+  from {
+    background-color: red;
+  } to {
+    background-color: #b70d0d;
+  }
+}
 article {
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
